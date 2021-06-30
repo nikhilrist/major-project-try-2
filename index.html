@@ -1,5 +1,5 @@
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>major project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,8 +34,8 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#login" class="w3-bar-item w3-button w3-padding-large">Hi<%= username %></a>
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#PRODUCTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
  
 </div>
@@ -84,72 +84,130 @@ body {font-family: "Lato", sans-serif}
   </div>
 
    <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
+  <div class="w3-row ">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
+	  <div class="w3-display-container">
+        <img src="images/Apple-Introduces-5.jpeg" style="width:100%">
 		<span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-black" > <a href="https://www.amazon.in/Apple-iPad-Pro-11-inch-27-96-Cellular/dp/B0932R57CG/ref=sr_1_1?dchild=1&keywords=ipad+pro+2021&qid=1625077736&sr=8-1"  target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
           </div>
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+		  </div>
+        <p>2021 Apple iPad Pro with Apple M1 chip <br><b>₹ 1,70,900.00</b></p>
       </div>
+	  </div>
+	  <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+	  <div class="w3-display-container">
+        <img src="images/15-inch-macbook-pro-2018.jpg" style="width:100%">
+		<span class="w3-tag w3-display-topleft">New</span>
+		<div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">
+			<a href="https://www.amazon.in/Apple-MacBook-Chip-13-inch-256GB/dp/B08N5WG761/ref=sr_1_1_sspa?dchild=1&keywords=macbook+pro&qid=1625078007&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySUhTWlVBQjlXUTFPJmVuY3J5cHRlZElkPUEwNTM0NjUySkhKOTcyQUlNODhHJmVuY3J5cHRlZEFkSWQ9QTA3MDYyNDZOOUFaMDRIT1hKVUcmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+        <p>Apple MacBook Pro<br><b>₹ 1,12,990.00</b></p>
       </div>
+	  </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
-          <img src="/w3images/jeans2.jpg" style="width:100%">
+          <img src="images/LZqT5QmRpHCFmsvATyLcH8-768-80.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-black">
+			<a href="https://www.amazon.in/OnePlus-Nord-Charcoal-256GB-Storage/dp/B09575YG72/ref=sr_1_4?crid=2HWRMX941EE8M&dchild=1&keywords=one+%2B+plus+nord&qid=1625078443&sprefix=one+%2B%2Caps%2C368&sr=8-4" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
           </div>
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <p>OnePlus Nord CE 5G<br><b>₹ 27,999.00</b></p>
       </div>
+	  </div>
+	  
+	  
+	  <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+	  <div class="w3-display-container">
+        <img src="images/Samsung-Galaxy-Z-Flip-2.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">
+			<a href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B084453RPV/ref=sr_1_2?crid=XBYMARGK41UI&dchild=1&keywords=galaxy+z+flip&qid=1625079118&sprefix=galaxy+z%2Caps%2C519&sr=8-2" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
+          </div>
+		  </div>
+        <p>Samsung Galaxy Z Flip<br><b>₹ 84,999.00</b></p>
       </div>
-    </div>
+	  </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+	  <div class="w3-display-container">
+        <img src="images/E94zVveAwf8VaVrDzCjK7i.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black"><a href="https://www.amazon.in/New-Apple-iPhone-Pro-256GB/dp/B08L5T31M6/ref=sr_1_3?crid=16LI3KN7E548C&dchild=1&keywords=iphone+12%2B+pro+max&qid=1625079309&sprefix=iphone+%2Caps%2C350&sr=8-3" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
+          </div>
+		  </div>
+        <p>Apple iPhone 12 Pro Max<br><b>₹ 1,32,200.00</b></p>
       </div>
+	  </div>
+	  <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
-          <img src="/w3images/jeans4.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Sale</span>
+          <img src="images/4oe7nNVk8vXtsXGPsiP9ZY.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            <button class="w3-button w3-black"><a href="https://www.apple.com/in/shop/buy-airpods/airpods-max" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
           </div>
         </div>
-        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+        <p>AirPods Max<br><b>₹ 59900.00</b></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+	  <div class="w3-display-container">
+        <img src="images/maxresdefaulthiu.jpg" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">
+			<button class="w3-button w3-black"><a href="https://www.amazon.in/i7-10750H-FHD-144hz-GTX1650Ti-4GB-Backlit-G512LI-HN126T/dp/B08JV1XDJD/ref=pd_day0_4/258-0113159-7715866?pd_rd_w=PTbI0&pf_rd_p=ddf3065d-37bd-4713-89a2-28f76ee88912&pf_rd_r=SAJ7FVTCYGMPSS347T6F&pd_rd_r=5fcf274c-9627-42a3-9709-678b4f845b75&pd_rd_wg=Z67Nz&pd_rd_i=B08JV1XDJD&psc=1" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
+          </div>
+		  </div>
+        <p> ROG Strix G15 i7-10750H<br><b>₹ 96,999.00</b></p>
       </div>
+	  </div>
+	  
+      <div class="w3-col l3 s6">
       <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+	  <div class="w3-display-container">
+        <img src="images/og__n5qzveqr596m.png" style="width:100%">
+        <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">
+			<a href="https://www.amazon.in/New-Apple-Watch-GPS-40mm-Aluminium/dp/B08J6HQK9F?ref_=ast_sto_dp&th=1&psc=1" title="insta" target="_blank" class="w3-hover-text-green">Buy now <i class="fa fa-shopping-cart"></i></button></a>
+			
+          </div>
+		  </div>
+        <p>Apple Watch Series 6 <br><b>₹ 47,900.00</b></p>
       </div>
-    </div>
-  </div>
+	  </div>
+	  
+	  <div class="w3-container">
+  <img src="images/Capture.png" class="w3-image" style="width:100%">
+</div>
+	  
   <!-- About Section -->
- <div class="w3-container w3-padding-32" id="about">
+ <div class="w3-container w3-padding-32 w3-center" id="about">
+    <h3 class="w3-wide w3-center">About</h3>
 
-    <h3 class="w3-wide w3-center" >ABOUT</h3>
-    <p> Allegiant tech is a group of experts who tell you about the best tech gadgets , so you don’t have to spend your precious time on research.
+    <p class="w3-wide w3-center"> Allegiant tech is a group of experts who tell you about the best tech gadgets , so you don’t have to spend your precious time on research.
 
 We’re a bunch of geeks who like new tech a bit too much. We research, read, and test for hours (thousands of hours by now)
 for the best tech gadgets in each category that seems relevant.
@@ -160,19 +218,19 @@ We show it to you in our website.
     <h3 class="w3-wide w3-center">WHO ARE WE?</h3>
   </div>
 
-  <div class="w3-row-padding  w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="images/newslide-1.jpg" alt="John" style="width:100%">
+  <div class="w3-row-padding   w3-center">
+    <div class="w3-col m6 w3-margin-center-left">
+      <img src="images/istockphoto.jpg" alt="John" style="width:70%">
       <h3>NIKHIL </h3>
       <p class="w3-opacity">front end developer</p>
-      <p>-----------------------------------------------------------</p>
-        <p><button class="w3-button w3-light-grey w3-block"><a href="mailto:NKNIKHILKUMAR612@GMAIL.com">Contact</a></button></p>
+      <p></p>
+        <p><button class="w3-button w3-light-grey w3-block "><a href="mailto:NKNIKHILKUMAR612@GMAIL.com">Contact</a></button></p>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="images/newslide-1.jpg" alt="Jane" style="width:100%">
+      <div class="w3-col  m6 w3-margin-center-right ">
+        <img src="images/istockphoto.jpg" alt="Jane" style="width:70%">
         <h3>SHUBHAM</h3>
         <p class="w3-opacity">back end developer</p>
-        <p>------------------------------------------------------------</p>
+        <p></p>
         <p><button class="w3-button w3-light-grey w3-block"><a href="mailto:shubhamhr07@gmail.com">Contact</a></button></p>
     </div>
 

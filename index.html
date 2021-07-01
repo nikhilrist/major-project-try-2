@@ -1,17 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
 <title>major project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Login popup box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
 
-
+<div class="login-popup">
+  	 <div class="box">
+  	 	 <div class="img-area">
+  	 	 	<div class="img">
+  	 	 	</div>
+  	 	 	<h1 style="color:white" > Allegiant TECH</h1>
+  	 	 </div>
+  	 	 <div class="form">
+  	 	 	<div class="close">&times;</div>
+  	 	 	<h1>Log In</h1>
+  	 	 	<form>
+  	 	 		<div class="form-group">
+  	 	 			<input type="text" placeholder="Email" class="form-control">
+  	 	 		</div>
+  	 	 		<div class="form-group">
+  	 	 			<input type="password" placeholder="Password" class="form-control">
+  	 	 		</div>
+  	 	 		<div class="form-group">
+  	 	 			<label><input type="checkbox">
+  	 	 				Remember Me
+  	 	 			</label>
+  	 	 		</div>
+  	 	 		<button type="button" class="btn">login </button>
+  	 	 	</form>
+  	 	 </div>
+  	 </div>
+  </div>
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
@@ -290,6 +324,39 @@ We show it to you in our website.
   <p>Powered by <a href="https://www.instagram.com/nikhilrist/" title="insta" target="_blank" class="w3-hover-text-green">me</a>  |  <a href="/">logout</a></p>
 </footer>
 <script>
+//pop up login //
+const loginPopup = document.querySelector(".login-popup");
+  const close = document.querySelector(".close");
+
+
+  window.addEventListener("load",function(){
+ 
+   showPopup();
+   // setTimeout(function(){
+   //   loginPopup.classList.add("show");
+   // },5000)
+
+  })
+
+  function showPopup(){
+        const timeLimit = 5 // seconds;
+        let i=0;
+        const timer = setInterval(function(){
+         i++;
+         if(i == timeLimit){
+          clearInterval(timer);
+          loginPopup.classList.add("show");
+         } 
+         console.log(i)
+        },1000);
+  }
+
+
+  close.addEventListener("click",function(){
+    loginPopup.classList.remove("show");
+  })
+
+
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
